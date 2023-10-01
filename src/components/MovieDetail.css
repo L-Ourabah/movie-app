@@ -1,0 +1,75 @@
+/* src/components/MovieDetail.css */
+.movie-detail {
+  
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #111;
+  color: white;
+}
+
+.movie-detail h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.movie-detail-content {
+  display: flex;
+}
+
+.movie-detail-poster img {
+  max-width: 300px;
+  width: 100%;
+}
+
+.movie-detail-info {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.movie-detail-description {
+  font-size: 16px;
+}
+
+.movie-trailer {
+  margin-top: 20px;
+}
+
+.suggested-movies {
+  margin-top: 20px;
+}
+
+.suggested-movies h3 {
+  font-size: 20px;
+}
+
+.suggested-movies-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-suggestion {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.movie-suggestion img {
+  max-width: 150px;
+  width: 100%;
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e50914;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #ff0000;
+}
