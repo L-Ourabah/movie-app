@@ -1,0 +1,159 @@
+/* Global styles */
+
+/* Style pour le body de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #136ce1;
+    color: #fff;
+  }
+  
+  /* Style pour le conteneur principal de l'application */
+  .container {
+  
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* MovieSearch styles */
+  
+  /* Style pour le titre principal */
+  .movie-search h1 {
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 3%;
+
+  }
+  
+  /* Style pour le titre des sections (Search Results, Popular Movies) */
+  .movie-search h2 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  .option{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+  }
+  /* Style pour la zone de recherche */
+  .recherche {
+    width: 50%;
+  }
+  .recherche input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style pour le bouton de recherche */
+  .movie-search button {
+    background-color: #e50914;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Style pour la liste de résultats */
+  .movie-search ul {
+    list-style: none;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3%;
+  }
+  
+  /* Style pour chaque élément de la liste de résultats */
+  .movie-search li {
+    width: 20%;
+    margin-bottom: 20px;
+    background-color: #333;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(236, 227, 227, 0.2);
+    transition: transform 0.2s;
+    margin-bottom: 5%;
+    
+  }
+  
+  /* Style pour le titre du film */
+  .movie-search h3 {
+    font-size: 2rem;
+    padding: 10px;
+    margin: 0;
+    background-color: #d40c0c;
+  }
+  
+  /* Style pour la note du film */
+  .movie-search p {
+    font-size: 2rem;
+    margin: 0;
+    padding: 5px 10px;
+    background-color: #000;
+  }
+  
+  /* Style pour l'image du film */
+  .movie-search img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+  }
+  
+  /* Style pour l'effet de survol */
+  .movie-search li:hover {
+    transform: scale(1.05);
+  }
+  
+  /* MovieFilter styles */
+  
+  /* Style pour le composant MovieFilter */
+  .movie-filter {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    display: flex;
+  }
+  
+  /* Style pour les étiquettes de filtre */
+  .movie-filter label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Style pour les listes déroulantes de filtre */
+  .movie-filter select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style pour le bouton de soumission du filtre */
+  .movie-filter button {
+    background-color: #e50914;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
