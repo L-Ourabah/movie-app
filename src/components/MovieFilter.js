@@ -17,7 +17,7 @@ function MovieFilter({
 }) {
   return (
     <div className="movie-filter">
-      <h2>Filtres</h2>
+      
       <div>
         <label htmlFor="genre">Genre:</label>
         <select id="genre" value={genre} onChange={onGenreChange}>
@@ -61,7 +61,7 @@ function MovieFilter({
           placeholder="Enter a year"
         />
       </div>
-      <button onClick={onFilterSubmit}>Apply Filters</button>
+      <button className='btn-fitre' onClick={onFilterSubmit}>🎚️</button>
     </div>
   );
 }
