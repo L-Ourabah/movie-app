@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
 import MovieSuggestion from './MovieSuggestion';
-import './MovieDetail.css'; // Importez votre fichier CSS personnalisé pour le style Netflix
+import './MovieDetail.css'; 
+
 
 function MovieDetail() {
   const [movie, setMovie] = useState(null);
@@ -40,6 +41,7 @@ function MovieDetail() {
         );
 
         setSuggestedMovies(similarMoviesResponse.data.results);
+        console.log(response.data)
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -56,19 +58,23 @@ function MovieDetail() {
           <div className="movie-detail-content">
             <div className="movie-detail-poster">
               <img
-                 src={movie.poster_path
+                src={movie.poster_path
                   ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
                   : '../images/no.png'}
                 alt={movie.title}
-               
-                
+
+
               />
             </div>
             <div className="movie-detail-info">
               <p className="movie-detail-description">{movie.overview}</p>
+              <div className="movie-detail-info-secondaire">
               <p>Année : {movie.release_date ? movie.release_date.slice(0, 4) : 'N/A'}</p>
               <p>Réalisateur : {movie.director ? movie.director : 'N/A'}</p>
               <p>Acteurs : {movie.actors ? movie.actors.join(', ') : 'N/A'}</p>
+
+             
+              </div>
             </div>
           </div>
           {trailerKey && (
@@ -96,9 +102,16 @@ function MovieDetail() {
               </div>
             </div>
           )}
+          <div className="navigation">
 
-          {/* Bouton de retour vers la page de recherche */}
-          <button className="back-button" onClick={() => navigate(-1)}>Retour</button>
+            {/* Bouton de retour vers la page de recherche */}
+            <button className="back-button" onClick={() => navigate(-1)}>Precedent</button>
+
+            <button className="home-button" onClick={() => navigate('/')} >Home </button>
+
+            <button className="next-button" onClick={() => navigate(+1)}>Suivant</button>
+
+          </div>
         </div>
       )}
     </div>
