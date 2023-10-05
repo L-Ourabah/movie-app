@@ -1,39 +1,62 @@
 /* src/components/MovieDetail.css */
 .movie-detail {
   
-  margin: 0 auto;
+
+
   padding: 20px;
   background-color: #111;
   color: white;
 }
 
 .movie-detail h2 {
-  font-size: 24px;
+  font-size: 2em;
   margin-top: 0;
+  text-align: center;
 }
 
 .movie-detail-content {
   display: flex;
+  justify-content: space-around;
+  height: 300px;
 }
 
+.movie-detail-poster{
+  width: 20%;
+  height: 300px;
+}
 .movie-detail-poster img {
-  max-width: 300px;
+  max-height: 100%;
   width: 100%;
 }
 
 .movie-detail-info {
-  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-left: 20px;
+  width: 70%;
+  gap: 5%;
 }
-
+.movie-detail-info-secondaire{
+  display: flex;
+  gap: 5%;
+}
 .movie-detail-description {
-  font-size: 16px;
+  font-size: 2em;
 }
 
 .movie-trailer {
   margin-top: 20px;
+display: flex;
+flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
+.movie-trailer iframe{
+  width: 80%;
+  height: 250px;
+  
+}
 .suggested-movies {
   margin-top: 20px;
 }
@@ -57,7 +80,14 @@
   max-width: 150px;
   width: 100%;
 }
-
+.navigation{
+ 
+  display:flex;
+  justify-content: center;
+  gap:5%;
+}
+.next-button,
+.home-button,
 .back-button {
   margin-top: 20px;
   padding: 10px 20px;
